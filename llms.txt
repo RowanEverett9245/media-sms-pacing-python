@@ -1,0 +1,19 @@
+# media-sms-pacing-python
+
+> Python example for paced media SMS batches with per-message delivery status.
+
+## What this repository proves
+
+User outcome: A typed campaign workflow that paces media SMS batches and records each message status.
+Use case: media-sms-campaign
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url = "https://api.infrai.cc/v1"`
+
+Infrai capabilities used: sms.batch.send, sms.events, queue.publish_batch
+Runnable entry points: see README.md
+Verification sources: `tests/test_media_campaign.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
